@@ -7,17 +7,29 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="student-dashboard.html">Back</a></li>
+      <li><a href="index.html">Logout</a></li>
+    </ul>
+  </nav>
   <div class="container">
     <h1>Submit Leave Application</h1>
+    <h3>Date of Absence:</h3>
     <form id="leave-application-form">
-      <label for="leave-date">Date of Absence:</label>
-      <input type="date" id="leave-date" required>
+      <label for="leave-start-date">Start date:</label>
+      <input type="date" id="leave-start-date" required>
+      <label for="leave-return-date">Return Date:</label>
+      <input type="date" id="leave-return-date" required>
 
       <label for="leave-reason">Reason for Leave:</label>
       <textarea id="leave-reason" required></textarea>
 
       <button type="submit">Submit</button>
     </form>
+    
+    <!-- Error message display -->
+    <div id="error-message" style="color: red; display: none;"></div>
   </div>
 
   <script src="student.js"></script>

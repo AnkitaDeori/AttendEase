@@ -1,5 +1,7 @@
 # AttendEase
 
+Link to the site : https://nausin18.github.io/AttendEase/
+
 AttendEase - Attendance Management System
 
 Project by: Ankita Deori and Nayeema N Laskar
@@ -13,6 +15,7 @@ Teachers can mark attendance in real-time, view previous attendance records, and
 Features
 
 For Teachers:
+
 
 Sign Up / Sign In: Create an account or log in.
 
@@ -28,6 +31,7 @@ Logout: Securely log out after the session.
 
 
 For Students:
+
 
 Sign Up / Sign In: Create an account or log in.
 

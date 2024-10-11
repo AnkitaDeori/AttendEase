@@ -7,30 +7,42 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="teacher-dashboard.html">Back</a></li>
+      <li><a href="index.html">Logout</a></li>
+    </ul>
+  </nav>
   <div class="container">
     <h1>Mark Attendance</h1>
     <form id="attendance-form">
-      <label for="course-id">Course ID:</label>
-      <select id="course-id" required>
-        <option value="course1">Course 1</option>
-        <option value="course2">Course 2</option>
-      </select>
-
       <label for="year">Year:</label>
       <select id="year" required>
+        <option value="">SELECT</option>
         <option value="1">1st Year</option>
         <option value="2">2nd Year</option>
+        <option value="3">3rd Year</option>
+        <option value="4">4th Year</option>
+      </select>
+
+      <label for="course-id">Course ID:</label>
+      <select id="course-id" required>
+        <option value="">SELECT</option>
+        <option value="course1">UCSE101</option>
+        <option value="course2">UCSE102</option>
       </select>
 
       <h3>Mark Attendance:</h3>
       <ul id="student-list">
         <li>
           <label>Student 1: </label>
-          <input type="checkbox" id="student1" value="present"> Present
+          <input type="radio" name="student1" id="student1-present" value="present"> Present
+          <input type="radio" name="student1" id="student1-absent" value="absent"> Absent
         </li>
         <li>
           <label>Student 2: </label>
-          <input type="checkbox" id="student2" value="present"> Present
+          <input type="radio" name="student2" id="student2-present" value="present"> Present
+          <input type="radio" name="student2" id="student2-absent" value="absent"> Absent
         </li>
       </ul>
 

@@ -7,35 +7,47 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Teacher Login</h1>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+  </nav>
 
-    <!-- Login Form -->
-    <form id="teacher-login-form">
-      <label for="email">Email:</label>
-      <input type="email" id="login-email" required>
-      
-      <label for="password">Password:</label>
-      <input type="password" id="login-password" required>
-      
-      <button type="submit">Login</button>
-    </form>
+  <div class="login-container">
+    <!-- Add an image for visual appeal -->
+    <div class="login-image-container">
+      <img src="images/teacher.png" alt="Teacher Login Image" class="login-image">
+    </div>
 
-    <!-- Sign-Up Form -->
-    <h2>New Teacher? Sign Up</h2>
-    <form id="teacher-signup-form">
-      <label for="name">Name:</label>
-      <input type="text" id="signup-name" required>
+    <!-- Sign-in form -->
+    <div class="login-form-container">
+      <h1>Teacher Login</h1>
+      <form id="teacher-login-form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
 
-      <label for="email">Email:</label>
-      <input type="email" id="signup-email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
 
-      <label for="password">Password:</label>
-      <input type="password" id="signup-password" required>
+        <button type="submit">Login</button>
+      </form>
 
-      <button type="submit">Sign Up</button>
-    </form>
-  </div>
+      <!-- Sign-Up Form -->
+      <h2>New Member? Sign Up</h2>
+      <form id="teacher-signup-form">
+        <label for="name">Name:</label>
+        <input type="text" id="signup-name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="signup-email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="signup-password" required>
+
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </div> <!-- Added missing closing div for login-container -->
 
   <script src="teacher.js"></script>
 </body>
