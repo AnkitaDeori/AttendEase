@@ -11,17 +11,40 @@ body {
 .navbar {
   background-color: #DBA39A; /* Navbar color */
   padding: 10px;
-  text-align: center;
+  position: relative; /* Position relative for the absolute positioning of the menu */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
 }
 
+/* Brand Styling */
+.brand {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 24px; /* Font size for brand name */
+  color: rgb(15, 7, 7); /* Color for the brand name */
+  font-weight: bold; /* Bold font */
+  margin-right: auto; /* Push the hamburger icon to the right */
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none; /* Initially hidden */
+  font-size: 30px; /* Size of the hamburger icon */
+  cursor: pointer; /* Cursor style */
+  color: white; /* Hamburger color */
+}
+
+/* Navbar Links */
 .navbar ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex; /* Use flexbox for layout */
+  justify-content: center; /* Center the items */
+  flex-grow: 1; /* Allow ul to grow and fill space */
 }
 
 .navbar ul li {
-  display: inline;
+  display: inline; /* Display items in a row */
   margin-right: 20px;
 }
 
@@ -54,25 +77,6 @@ body {
   max-width: 600px;
 }
 
-.login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  max-width: 1000px;
-  margin: 50px auto;
-}
-
-.login-image-container {
-  flex: 1;
-  max-width: 400px;
-}
-
-.login-form-container {
-  flex: 1;
-  padding-left: 20px;
-}
-
 /* Login Image Styling */
 .login-image {
   max-width: 100%;
@@ -90,7 +94,8 @@ h2 {
   color: #90A17D; /* Light Green for Sign-Up heading */
   text-align: center;
 }
-p{
+
+p {
   text-align: center;
 }
 
@@ -98,7 +103,6 @@ form label {
   display: block;
   margin: 10px 0 5px;
   color: #A5B68D; /* Olive Green for labels */
-
 }
 
 form input, form select, form textarea {
@@ -128,31 +132,38 @@ button:hover {
   background-color: #FFD09B; /* Button hover effect */
 }
 
-input[type="radio"] {
-  width: auto; /* Remove width */
-  margin: 0; /* Remove margin */
-  padding: 0; /* Remove padding */
-  display: inline; /* Display inline to align with label */
+/* Footer Styling */
+.foot-panel1 {
+  background-color: #DBA39A;
+  color: white;
+  height: 77.2px;
+  font-size: 0.7rem;
+  text-align: center;
 }
+
 /* Responsive Media Queries */
 @media (max-width: 768px) {
-  .login-container {
-    flex-direction: column;
-    padding: 20px;
+  .navbar ul {
+    display: none; /* Hide the menu by default on small screens */
+    flex-direction: column; /* Stack items vertically */
+    width: 100%; /* Full width for the menu */
+    position: absolute; /* Position the menu */
+    top: 50px; /* Adjust based on navbar height */
+    left: 0;
+    background-color: #DBA39A; /* Background color of dropdown menu */
   }
 
-  .login-form-container {
-    padding-left: 0;
+  .navbar.active ul {
+    display: flex; /* Show menu when active */
+  }
+
+  .hamburger {
+    display: block; /* Show the hamburger icon on small screens */
   }
 
   .navbar ul li {
-    display: block;
-    margin: 10px 0;
-  }
-
-  .container {
-    max-width: 90%;
-    margin: 10px auto;
+    display: block; /* Stack links vertically */
+    margin: 10px 0; /* Add spacing */
   }
 }
 
