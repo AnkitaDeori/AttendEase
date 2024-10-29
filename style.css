@@ -50,8 +50,8 @@ body {
 
 /* Image Styling */
 .container img {
-  width: 100%; /* Make the image take up the full width of the container */
-  height: auto; /* Maintain aspect ratio */
+  flex: 1;
+  max-width: 600px;
 }
 
 .login-container {
@@ -75,8 +75,8 @@ body {
 
 /* Login Image Styling */
 .login-image {
-  width: 100%; /* Make the login image responsive */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
 }
 
@@ -90,15 +90,19 @@ h2 {
   color: #90A17D; /* Light Green for Sign-Up heading */
   text-align: center;
 }
+p{
+  text-align: center;
+}
 
 form label {
   display: block;
   margin: 10px 0 5px;
   color: #A5B68D; /* Olive Green for labels */
+
 }
 
 form input, form select, form textarea {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ddd;
@@ -109,7 +113,7 @@ form input, form select, form textarea {
 /* Button Styling */
 button {
   display: block;
-  width: 100%;
+  width: 50%;
   padding: 12px;
   background-color: #DBA39A; /* Button background color */
   color: white;
@@ -124,6 +128,12 @@ button:hover {
   background-color: #FFD09B; /* Button hover effect */
 }
 
+input[type="radio"] {
+  width: auto; /* Remove width */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  display: inline; /* Display inline to align with label */
+}
 /* Responsive Media Queries */
 @media (max-width: 768px) {
   .login-container {

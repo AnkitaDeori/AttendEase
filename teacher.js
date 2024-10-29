@@ -44,6 +44,9 @@ document.getElementById('attendance-form').addEventListener('submit', function(e
   const attendance = {
     student1: document.querySelector('input[name="student1"]:checked').value,
     student2: document.querySelector('input[name="student2"]:checked').value,
+    student3: document.querySelector('input[name="student3"]:checked').value,
+    student4: document.querySelector('input[name="student4"]:checked').value,
+    student5: document.querySelector('input[name="student5"]:checked').value,
     date: new Date().toISOString().split('T')[0], // Get current date
     year,
     courseId,
