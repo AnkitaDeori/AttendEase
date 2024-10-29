@@ -8,15 +8,6 @@ body {
 }
 
 /* Navbar Styling */
-.navbar {
-  background-color: #DBA39A; /* Navbar color */
-  padding: 10px;
-  position: relative; /* Position relative for the absolute positioning of the menu */
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Align items vertically */
-}
-
-/* Brand Styling */
 .brand {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 24px; /* Font size for brand name */
@@ -32,8 +23,14 @@ body {
   cursor: pointer; /* Cursor style */
   color: white; /* Hamburger color */
 }
+.navbar {
+  background-color: #DBA39A; /* Navbar color */
+  padding: 10px;
+  position: relative; /* Position relative for the absolute positioning of the menu */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Align items vertically */
+}
 
-/* Navbar Links */
 .navbar ul {
   list-style: none;
   margin: 0;
@@ -60,7 +57,6 @@ body {
   background-color: #FFD09B; /* Link hover effect */
   border-radius: 4px; /* Rounded corners for hover effect */
 }
-
 /* Container Styling */
 .container {
   max-width: 600px;
@@ -75,6 +71,25 @@ body {
 .container img {
   flex: 1;
   max-width: 600px;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.login-image-container {
+  flex: 1;
+  max-width: 400px;
+}
+
+.login-form-container {
+  flex: 1;
+  padding-left: 20px;
 }
 
 /* Login Image Styling */
@@ -94,8 +109,7 @@ h2 {
   color: #90A17D; /* Light Green for Sign-Up heading */
   text-align: center;
 }
-
-p {
+p{
   text-align: center;
 }
 
@@ -103,6 +117,7 @@ form label {
   display: block;
   margin: 10px 0 5px;
   color: #A5B68D; /* Olive Green for labels */
+
 }
 
 form input, form select, form textarea {
@@ -132,15 +147,20 @@ button:hover {
   background-color: #FFD09B; /* Button hover effect */
 }
 
-/* Footer Styling */
+input[type="radio"] {
+  width: auto; /* Remove width */
+  margin: 0; /* Remove margin */
+  padding: 0; /* Remove padding */
+  display: inline; /* Display inline to align with label */
+}
 .foot-panel1 {
   background-color: #DBA39A;
   color: white;
   height: 77.2px;
   font-size: 0.7rem;
   text-align: center;
-}
 
+}
 /* Responsive Media Queries */
 @media (max-width: 768px) {
   .navbar ul {
