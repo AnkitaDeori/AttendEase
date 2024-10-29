@@ -1,6 +1,6 @@
 # AttendEase
 
-Link to the site:https://nausin18.github.io/AttendEase/
+Link to the site : https://nausin18.github.io/AttendEase/
 
 AttendEase - Attendance Management System
 
