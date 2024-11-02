@@ -70,7 +70,8 @@ body {
 /* Image Styling */
 .container img {
   flex: 1;
-  max-width: 600px;
+  width: 100%;
+  height: auto;
 }
 
 .login-container {
@@ -185,6 +186,8 @@ input[type="radio"] {
     display: block; /* Stack links vertically */
     margin: 10px 0; /* Add spacing */
   }
+
+  
 }
 
 @media (max-width: 480px) {
