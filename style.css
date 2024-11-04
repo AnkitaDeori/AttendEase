@@ -154,12 +154,33 @@ input[type="radio"] {
   padding: 0; /* Remove padding */
   display: inline; /* Display inline to align with label */
 }
-.foot-panel1 {
-  background-color: #DBA39A;
+
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  padding: 0.1rem;
+  background: rgb(77, 82, 88);
+}
+
+.footer-column {
+  font-size: 0.8em;
+  flex: 1;
+  min-width: 200px;
+  margin: 5px;
+}
+.footer-column a{
+  font-size: 0.8em;
+  color: #ced7b0;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
   color: white;
-  height: 77.2px;
-  font-size: 0.7rem;
-  text-align: center;
 
 }
 /* Responsive Media Queries */
@@ -198,4 +219,13 @@ input[type="radio"] {
   button {
     padding: 12px;
   }
+}
+.footer-container {
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-column {
+  max-width: 100%;
+  text-align: center;
 }
