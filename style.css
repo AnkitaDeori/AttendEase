@@ -1,73 +1,72 @@
-/* General Styling */
+
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif; /* Updated to a more standard font */
+  font-family: 'Helvetica Neue', Arial, sans-serif; 
   margin: 0;
   padding: 0;
-  background-color: #FCF8E8; /* Updated body background color */
-  color: #A5B68D; /* Text color */
+  background-color: #FCF8E8; 
+  color: #A5B68D; 
 }
 
-/* Navbar Styling */
+
 .brand {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 24px; /* Font size for brand name */
-  color: rgb(15, 7, 7); /* Color for the brand name */
-  font-weight: bold; /* Bold font */
-  margin-right: auto; /* Push the hamburger icon to the right */
+  font-size: 24px;
+  color: rgb(15, 7, 7); 
+  font-weight: bold;
+  margin-right: auto; 
 }
 
-/* Hamburger Menu */
 .hamburger {
-  display: none; /* Initially hidden */
-  font-size: 30px; /* Size of the hamburger icon */
-  cursor: pointer; /* Cursor style */
-  color: white; /* Hamburger color */
+  display: none;
+  font-size: 30px; 
+  cursor: pointer;
+  color: white; 
 }
 .navbar {
-  background-color: #DBA39A; /* Navbar color */
+  background-color: #DBA39A;
   padding: 10px;
-  position: relative; /* Position relative for the absolute positioning of the menu */
-  display: flex; /* Use flexbox for layout */
-  align-items: center; /* Align items vertically */
+  position: relative; 
+  display: flex; 
+  align-items: center; 
 }
 
 .navbar ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex; /* Use flexbox for layout */
-  justify-content: center; /* Center the items */
-  flex-grow: 1; /* Allow ul to grow and fill space */
+  display: flex; 
+  justify-content: center; 
+  flex-grow: 1; 
 }
 
 .navbar ul li {
-  display: inline; /* Display items in a row */
+  display: inline; 
   margin-right: 20px;
 }
 
 .navbar ul li a {
-  color: white; /* White text */
+  color: white;
   text-decoration: none;
   padding: 10px;
-  font-size: 18px; /* Increased font size for navbar links */
-  font-weight: bold; /* Bold font for navbar links */
+  font-size: 18px; 
+  font-weight: bold; 
 }
 
 .navbar ul li a:hover {
-  background-color: #FFD09B; /* Link hover effect */
-  border-radius: 4px; /* Rounded corners for hover effect */
+  background-color: #FFD09B; 
+  border-radius: 4px; 
 }
-/* Container Styling */
+
 .container {
   max-width: 600px;
   margin: 20px auto;
   padding: 20px;
   background-color: white;
   border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Softer shadow for the container */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); 
 }
 
-/* Image Styling */
+
 .container img {
   flex: 1;
   width: 100%;
@@ -93,21 +92,20 @@ body {
   padding-left: 20px;
 }
 
-/* Login Image Styling */
 .login-image {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
-/* Form Styling */
+
 h1 {
   text-align: center;
-  color: #90A17D; /* Headings color */
+  color: #90A17D; 
 }
 
 h2 {
-  color: #90A17D; /* Light Green for Sign-Up heading */
+  color: #90A17D; 
   text-align: center;
 }
 p{
@@ -117,7 +115,7 @@ p{
 form label {
   display: block;
   margin: 10px 0 5px;
-  color: #A5B68D; /* Olive Green for labels */
+  color: #A5B68D;
 
 }
 
@@ -127,7 +125,7 @@ form input, form select, form textarea {
   margin-bottom: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
-  background-color: #F0DBDB; /* Input fields background color */
+  background-color: #F0DBDB; 
 }
 
 /* Button Styling */
@@ -135,7 +133,7 @@ button {
   display: block;
   width: 50%;
   padding: 12px;
-  background-color: #DBA39A; /* Button background color */
+  background-color: #DBA39A; 
   color: white;
   border: none;
   border-radius: 4px;
@@ -145,14 +143,14 @@ button {
 }
 
 button:hover {
-  background-color: #FFD09B; /* Button hover effect */
+  background-color: #FFD09B; 
 }
 
 input[type="radio"] {
-  width: auto; /* Remove width */
-  margin: 0; /* Remove margin */
-  padding: 0; /* Remove padding */
-  display: inline; /* Display inline to align with label */
+  width: auto; 
+  margin: 0; 
+  padding: 0; 
+  display: inline; 
 }
 
 .footer-container {
@@ -183,29 +181,30 @@ input[type="radio"] {
   color: white;
 
 }
+
 /* Responsive Media Queries */
 @media (max-width: 768px) {
   .navbar ul {
-    display: none; /* Hide the menu by default on small screens */
-    flex-direction: column; /* Stack items vertically */
-    width: 100%; /* Full width for the menu */
-    position: absolute; /* Position the menu */
-    top: 50px; /* Adjust based on navbar height */
+    display: none; 
+    flex-direction: column;
+    width: 100%; 
+    position: absolute; 
+    top: 50px; 
     left: 0;
-    background-color: #DBA39A; /* Background color of dropdown menu */
+    background-color: #DBA39A;
   }
 
   .navbar.active ul {
-    display: flex; /* Show menu when active */
+    display: flex;
   }
 
   .hamburger {
-    display: block; /* Show the hamburger icon on small screens */
+    display: block; 
   }
 
   .navbar ul li {
-    display: block; /* Stack links vertically */
-    margin: 10px 0; /* Add spacing */
+    display: block; 
+    margin: 10px 0; 
   }
 
   
