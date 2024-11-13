@@ -5,19 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Teacher Dashboard</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <nav class="navbar">
+    <div class="brand">AttendEase</div> 
+    <div class="hamburger" id="hamburger">&#9776;</div> 
     <ul>
       <li><a href="mark-attendance.html">Mark Attendance</a></li>
       <li><a href="teacher-attendance.html">View Attendance</a></li>
       <li><a href="index.html" onclick="logout()">Logout</a></li>
     </ul>
+    
   </nav>
 
   <div class="container">
     <h1>Welcome, Teacher</h1>
     <p>Select an option from the navbar to proceed.</p>
+    <div class="login-image-container">
+      <img src="images/teacher.png" alt="Teacher Login Image" class="login-image">
+    </div>
   </div>
 
   <script src="teacher.js"></script>

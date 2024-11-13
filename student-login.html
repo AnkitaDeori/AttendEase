@@ -5,21 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Login</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script> 
 </head>
 <body>
   <nav class="navbar">
+    <div class="brand">AttendEase</div> 
+    <div class="hamburger" id="hamburger">&#9776;</div>
     <ul>
       <li><a href="index.html">Home</a></li>
     </ul>
   </nav>
 
   <div class="login-container">
-    <!-- Add an image for visual appeal -->
+    
     <div class="login-image-container">
       <img src="images/student.png" alt="Student Login Image" class="login-image">
     </div>
 
-    <!-- Sign-in form -->
+    
     <div class="login-form-container">
       <h1>Student Login</h1>
       <form id="student-login-form">
@@ -34,7 +37,7 @@
 
       <div id="login-error-message" class="error-message" style="display: none;"></div>
 
-      <!-- Sign-Up Form -->
+      
       <h2>New Member? Sign Up</h2>
       <form id="student-signup-form">
         <label for="name">Name:</label>
@@ -51,7 +54,7 @@
 
       <div id="signup-success-message" class="success-message" style="display: none;"></div>
       <div id="signup-error-message" class="error-message" style="display: none;"></div>
-    </div> <!-- Closing the login-form-container div -->
+    </div>
   </div>
 
   <script src="student.js"></script>
